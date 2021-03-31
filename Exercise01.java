@@ -6,10 +6,10 @@ public class ExerciseOne {
       System.out.println(ex01.reverseString("Dad"));
       System.out.println(ex01.reverseString("Bsuiness School"));
       
-      // Uncomment the following statements after finishing Exercise Four
-    //   System.out.println(ex01.isStringPalindrome("hello world"));
-    //   System.out.println(ex01.isStringPalindrome("Dad"));
-    //   System.out.println(ex01.isStringPalindrome("radar"));
+        //Uncomment the following statements after finishing Exercise Four
+        System.out.println(ex01.isStringPalindrome("hello world"));
+        System.out.println(ex01.isStringPalindrome("Dad"));
+        System.out.println(ex01.isStringPalindrome("radar"));
     }
     
     // Exercise One
@@ -23,7 +23,16 @@ public class ExerciseOne {
     
     // Exercise Four
     private boolean isStringPalindrome(String word) {
-        // Complete this method to deermine if the given word is a palindrome
+        String rWord = "";
+    for(int i = 0; i < word.length(); i++){
+            rWord = word.charAt(i) + rWord;
+    }
+    if (rWord.equals(word)){
+        return true;
+        
+    }
+    else{
         return false;
     }
+}
 }
