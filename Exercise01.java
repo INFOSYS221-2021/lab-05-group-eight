@@ -27,7 +27,7 @@ public class ExerciseOne {
     for(int i = 0; i < word.length(); i++){
             rWord = word.charAt(i) + rWord;
     }
-    if (rWord.equals(word)){
+    if (rWord.toLowerCase().equals(word.toLowerCase())){
         return true;
         
     }
